@@ -56,6 +56,9 @@
       needs:
        - unit-testing
        - code-coverage
+      permissions:
+        packages: write
+        contents: read
       steps:
       - uses: actions/checkout@v4
       - name: Log in to GHCR
